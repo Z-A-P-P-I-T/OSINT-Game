@@ -21,9 +21,14 @@ body {
   margin: 0;
   min-height: 100vh;
   color: var(--ink);
-  background: radial-gradient(circle at 20% 10%, #1b1440 0%, transparent 45%),
-              radial-gradient(circle at 80% 0%, #10233a 0%, transparent 40%),
-              linear-gradient(120deg, #06070d 0%, #06020a 60%, #0a0f1d 100%);
+  background-image: radial-gradient(circle at 20% 10%, #1b1440 0%, transparent 45%),
+                    radial-gradient(circle at 80% 0%, #10233a 0%, transparent 40%),
+                    linear-gradient(120deg, #06070d 0%, #06020a 60%, #0a0f1d 100%),
+                    url("bg.png");
+  background-position: 20% 10%, 80% 0%, center, center;
+  background-size: auto, auto, auto, cover;
+  background-repeat: no-repeat;
+  background-color: var(--bg);
   font-family: "Share Tech Mono", monospace;
   font-size: clamp(18px, 1.1vw + 8px, 22px);
   line-height: 1.5;
